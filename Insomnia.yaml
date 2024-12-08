@@ -1,0 +1,288 @@
+_type: export
+__export_format: 4
+__export_date: 2024-10-03T15:59:04.395Z
+__export_source: insomnia.desktop.app:v9.1.1
+resources:
+  - _id: req_73e65d33ac434a4db94e2dce56ecce13
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727970933981
+    created: 1727970849637
+    url: http://localhost:8081/buildings
+    name: Buildings
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1727970849637
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_b424db5bcd4a4572897c6be569bc2a99
+    parentId: null
+    modified: 1727970745239
+    created: 1688126225009
+    name: Spring DEMO
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_d4518f2373d443ea87bf7008a3cbf894
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727971057210
+    created: 1727970930261
+    url: http://localhost:8081/buildings/c0585c8e-4437-4e12-9166-5313d31ae9a0
+    name: Building by id
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1723135609184.375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4418eba124db4bbc95a3f5ebb0572ab7
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727971079750
+    created: 1727971046486
+    url: http://localhost:8081/buildings/name/HD01
+    name: Building by name
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1720717988958.0625
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a1470c67bb70400b87573bb2336763c1
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727971010875
+    created: 1689288926016
+    url: http://localhost:8081/buildings
+    name: Building
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "HD02",
+        	"nrOfDesks": 40,
+        	"addressID": "3baa232c-2390-46a0-a51c-a258939e493a"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1718300368731.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_63f9b74e1f524004b933f67dd27f594b
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727970968662
+    created: 1727970953969
+    url: http://localhost:8081/buildings/dfe96b0d-3fde-4696-b01b-5afb2bfee367
+    name: Building
+    description: ""
+    method: DELETE
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1713465128279.125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4ff9615e83f541c4b14305df6df41997
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727970979539
+    created: 1727970874796
+    url: http://localhost:8081/addresses
+    name: Addresses
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1708629887826.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_721f32c9c73a444d9d45a94502bbce59
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727970996409
+    created: 1727970984043
+    url: http://localhost:8081/addresses/3baa232c-2390-46a0-a51c-a258939e493a
+    name: Address
+    description: ""
+    method: GET
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1703828282093.25
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e69ee392a5bb461e8a62761e367b2d15
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727971021297
+    created: 1710686055346
+    url: http://localhost:8081/addresses
+    name: Address
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"street": "Europaplatz",
+        	"houseNr": "17",
+        	"city": "Heidelberg",
+        	"zip": "69115"
+        }
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1702627880659.9375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a81ad58ba55047419f54e13f8d77ed04
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1727971025290
+    created: 1727971018306
+    url: http://localhost:8081/addresses/3baa232c-2390-46a0-a51c-a258939e493a
+    name: Address
+    description: ""
+    method: DELETE
+    body: {}
+    preRequestScript: ""
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.1.1
+    authentication: {}
+    metaSortKey: -1701427479226.625
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_867b0ef436d102ab3043e307d9d436b7d85130d8
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1688126225011
+    created: 1688126225011
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1688126225011
+    _type: environment
+  - _id: jar_867b0ef436d102ab3043e307d9d436b7d85130d8
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1710686445391
+    created: 1688126225011
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: 7F62C807913E1664B3BB71781EAF2FB4
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2024-03-17T14:34:48.649Z
+        lastAccessed: 2024-03-17T14:40:45.391Z
+        id: "8022616541222749"
+    _type: cookie_jar
+  - _id: spc_546e71ad3fd448afa32a77ab7a00b0b9
+    parentId: wrk_b424db5bcd4a4572897c6be569bc2a99
+    modified: 1688126225009
+    created: 1688126225009
+    fileName: AFINUM
+    contents: ""
+    contentType: yaml
+    _type: api_spec
