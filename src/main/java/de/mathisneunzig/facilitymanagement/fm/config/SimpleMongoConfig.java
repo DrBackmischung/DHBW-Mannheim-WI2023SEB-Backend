@@ -17,7 +17,7 @@ public class SimpleMongoConfig {
  
     @Bean
     public MongoClient mongo() {
-        ConnectionString connectionString = new ConnectionString("to be changed");
+        ConnectionString connectionString = new ConnectionString("mongodb+srv://admin:MongoDBAdmin@mathisneunzig.gxcl7jz.mongodb.net/?retryWrites=true&w=majority&appName=mathisneunzig");
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
           .uuidRepresentation(UuidRepresentation.STANDARD)
           .applyConnectionString(connectionString)

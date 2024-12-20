@@ -6,7 +6,7 @@ import de.mathisneunzig.facilitymanagement.fm.config.CustomMongoRepository;
 import de.mathisneunzig.facilitymanagement.fm.entity.Building;
 
 public interface BuildingRepository extends CustomMongoRepository<Building> {
-	
-	Optional<Building> findByName(String name);
 
+	Optional<Building> findByName(String name);
+	
 }
