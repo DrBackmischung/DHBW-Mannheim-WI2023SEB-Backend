@@ -1,14 +1,14 @@
-package de.mathisneunzig.facilitymanagement.fm.dao;
+package de.mathisneunzig.facilitymanagement.fm.dto;
 
 import java.util.UUID;
 
-public class BuildingDAO {
+public class BuildingDTO {
 	
 	private String name;
 	private int nrOfDesks;
 	private UUID addressID;
 	
-	public BuildingDAO(String name, int nrOfDesks, UUID addressID) {
+	public BuildingDTO(String name, int nrOfDesks, UUID addressID) {
 		super();
 		this.name = name;
 		this.nrOfDesks = nrOfDesks;

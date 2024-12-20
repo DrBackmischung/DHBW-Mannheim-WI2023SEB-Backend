@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import de.mathisneunzig.facilitymanagement.fm.dao.BuildingDAO;
+import de.mathisneunzig.facilitymanagement.fm.dto.BuildingDTO;
 import de.mathisneunzig.facilitymanagement.fm.entity.Address;
 import de.mathisneunzig.facilitymanagement.fm.entity.Building;
 import de.mathisneunzig.facilitymanagement.fm.repo.AddressRepository;
@@ -16,7 +16,7 @@ public class BuildingFactory {
 	@Autowired
 	private AddressRepository addressRepository;
 	
-	public Building create(BuildingDAO dao) {
+	public Building create(BuildingDTO dao) {
 		Address address;
 		try {
 			address = addressRepository.findById(dao.getAddressID()).get();

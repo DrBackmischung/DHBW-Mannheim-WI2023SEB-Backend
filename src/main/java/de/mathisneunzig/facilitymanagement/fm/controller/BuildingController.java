@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.mathisneunzig.facilitymanagement.fm.dao.BuildingDAO;
+import de.mathisneunzig.facilitymanagement.fm.dto.BuildingDTO;
 import de.mathisneunzig.facilitymanagement.fm.entity.Building;
 import de.mathisneunzig.facilitymanagement.fm.factory.BuildingFactory;
 import de.mathisneunzig.facilitymanagement.fm.repo.BuildingRepository;
@@ -55,7 +55,7 @@ public class BuildingController {
     }
 
     @PostMapping("")
-    public ResponseEntity<Object> add(@RequestBody BuildingDAO dao){
+    public ResponseEntity<Object> add(@RequestBody BuildingDTO dao){
         try {
             Building b = factory.create(dao);
             return new ResponseEntity<Object>(buildingRepository.save(b), HttpStatus.CREATED); // Recap: 201 means "Created"
