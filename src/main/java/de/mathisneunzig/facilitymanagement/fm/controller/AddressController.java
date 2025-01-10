@@ -47,10 +47,10 @@ public class AddressController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Object> delete(@PathVariable UUID id){
-        try{
+        try {
         	addressRepository.delete(addressRepository.findById(id).get());
             return new ResponseEntity<Object>("Address with id " + id + " deleted", HttpStatus.OK);
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e){
             return new ResponseEntity<Object>("Address with id " + id + " could not be found", HttpStatus.NOT_FOUND);
         }
     }

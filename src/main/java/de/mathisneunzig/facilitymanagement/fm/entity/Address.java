@@ -27,6 +27,8 @@ public class Address extends UuidIdentifiedEntity {
 		this.city = city;
 		this.zip = zip;
 	}
+	
+	public Address() {}
 
 	public String getStreet() {
 		return street;
